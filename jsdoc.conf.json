@@ -1,0 +1,38 @@
+{
+  "source": {
+    "include": ["README.md", "src", "./package.json"]
+  },
+	"tags": {
+		"allowUnknownTags": true
+	},
+  "markdown": {
+    "excludeTags": ["author"]
+  },
+	"opts": {
+    "access": "all",
+    "encoding": "utf8",
+    "destination": "./docs",
+    "recurse": true,
+    "template": "node_modules/loke-jsdoc-theme"
+	},
+	"plugins": [
+		"plugins/markdown",
+    "./node_modules/loke-jsdoc-theme/plugins/async",
+    "./node_modules/loke-jsdoc-theme/plugins/rpc",
+    "./node_modules/loke-jsdoc-theme/plugins/api",
+    "./node_modules/loke-jsdoc-theme/plugins/timeout"
+	],
+	"templates": {
+		"cleverLinks": false,
+		"monospaceLinks": true,
+		"default": {
+			"outputSourceFiles": true
+		},
+    "systemName": "HTZ A11Y TABS",
+		"navType": "vertical",
+		"linenums": true,
+		"dateFormat": "MMMM Do YYYY, h:mm:ss a"
+	}
+}
+
+

@@ -1,0 +1,29 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+
+# This is the top-most EditorConfig file
+root = true
+
+#### All files
+[*]
+## Indents
+# Indent using spaces even when inserting `tab` (soft tabs)
+indent_style = space  
+# The number of spaces for each tab when using soft tabs
+indent_size = 2       
+
+## Newlines
+end_of_line = lf				# Unix-style newlines
+insert_final_newline = true		# Newline ending every file
+
+## Misc
+charset = utf-8 
+# remove whitespace before newline characters
+trim_trailing_whitespace = true 
+
+
+#### Overrides for Markdown files
+[*.md]
+# Don't remove trailing whitespace in markdown files
+trim_trailing_whitespace = false  
