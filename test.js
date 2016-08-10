@@ -5,5 +5,6 @@ import tabs from 'htz-a11y-tabs';
 const tabs1 = document.getElementById('tabs1');
 const tabs2 = document.getElementById('tabs2');
 
-tabs(tabs1);
-tabs(tabs2, true);
+
+window.tabs1 = tabs(tabs1);
+window.tabs2 = tabs(tabs2, true);

@@ -59,9 +59,11 @@ export function initialize(
 
 
     tabpanel.setAttribute('role', 'tabpanel');
-    if (!isActive) tabpanel.setAttribute('aria-hidden', 'true');
-    if (!tabpanel.id) tabpanel.id = controls;
+    isActive ?
+      tabpanel.removeAttribute('aria-hidden') :
+      tabpanel.setAttribute('aria-hidden', 'true');
 
+    if (!tabpanel.id) tabpanel.id = controls;
     if (isActive) makeFocusable(tabpanel);
   });
 
@@ -93,15 +95,49 @@ export function initialize(
 
 
 /**
- * Remove event listeners
+ * Destroy an instance. Removes event listeners and, optionally,
+ * accessibility attributes from the DOM.
  *
  * @param {HTMLElement} container - The container wrapping the tab interface
+ * @param {String} tablistSelector - The tablist's selector.
+ * @param {String} tabpanelSelector - The tabpanel's selector.
  * @param {clickHandler} clickHandler - A callback to handle click events.
  * @param {keyHandler} keyHandler - A callback to handle keydown events.
+ * @param {Boolean} [removeAttrs] - Determine if attributes should be remove
  */
-export function destroyInstance(container, clickHandler, keyHandler) {
-  container.removeEventListener('click', clickHandler);
-  container.removeEventListener('keydown', keyHandler);
+export function destroyInstance(
+  container,
+  tablistSelector,
+  tabpanelSelector,
+  clickHandler,
+  keyHandler,
+  removeAttrs
+) {
+  const tablist = container.querySelector(tablistSelector);
+
+  // Remove event listeners
+  tablist.removeEventListener('click', clickHandler);
+  tablist.removeEventListener('keydown', keyHandler);
+
+  if (removeAttrs) {
+    const tabpanels = Array.from(container.querySelectorAll(tabpanelSelector));
+    const tabs = Array.from(tablist.children);
+
+    tablist.removeAttribute('role');
+
+    tabs.forEach((tab, index) => {
+      const clickable = tab.querySelector('a, button');
+      const tabpanel = tabpanels[index];
+
+      tab.removeAttribute('role');
+      clickable.removeAttribute('role');
+      clickable.removeAttribute('tabindex');
+      clickable.removeAttribute('aria-controls');
+      clickable.removeAttribute('aria-selected');
+      tabpanel.removeAttribute('role');
+      tabpanel.removeAttribute('aria-hidden');
+    });
+  }
 
   /**
    * Fired from `container` after a tab interface has been destroyed.

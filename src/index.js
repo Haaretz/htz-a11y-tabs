@@ -109,16 +109,24 @@ export default function htzA11yTabs(
   }
 
   /**
-   * Remove event listeners from an instance
+   * Destroy an instance. Removes event listeners and, optionally,
+   * accessibility attributes from the DOM.
    *
    * @callback module:htz-a11y-tabs#destroy
+   *
+   * @param {Boolean} [removeAttrs] - Determine if attributes should be remove
    */
-  function destroy() {
-    if (state.isInitialized) {
-      destroyInstance(container, clickHandler, keyHandler);
+  function destroy(removeAttrs) {
+    destroyInstance(
+      container,
+      tablistSelector,
+      tabpanelSelector,
+      clickHandler,
+      keyHandler,
+      removeAttrs
+    );
 
-      state.isInitialized = false;
-    }
+    state.isInitialized = false;
   }
 
   /**
@@ -170,8 +178,8 @@ export default function htzA11yTabs(
    *
    * @typedef {Object} module:htz-a11y-tabs#API
    *
-   * @prop {Boolean} isInitialized - Indicates if the instance is initialized
-   * @prop {Integer} isInitialized - The number of the active tab. Zero based.
+   * @prop {Method} isInitialized - Returns true if the instance is initialized
+   * @prop {Method} visibleTab - Returns the number of the active tab. Zero based.
    * @prop {module:htz-a11y-tabs#init} init - Initialize an instance.
    * @prop {module:htz-a11y-tabs#destroy} destroy - Destroy an instance.
    * @prop {module:htz-a11y-tabs#goto} goto - Go to a specific tab
@@ -180,8 +188,8 @@ export default function htzA11yTabs(
    */
   return {
     // Status
-    isInitialized: state.isInitialized,
-    visibleTab: state.activeTab,
+    isInitialized() { return state.isInitialized; },
+    visibleTab() { return state.activeTab; },
 
     // Instance handling
     init,
