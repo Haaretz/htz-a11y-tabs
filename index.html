@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Events</h3><ul><li><a href="module-htz-a11y-tabs.html#~event:a11y-tabs:after-select">a11y-tabs:after-select</a></li><li><a href="module-htz-a11y-tabs.html#~event:a11y-tabs:before-select">a11y-tabs:before-select</a></li><li><a href="module-htz-a11y-tabs.html#~event:a11y-tabs:destroy">a11y-tabs:destroy</a></li><li><a href="module-htz-a11y-tabs.html#~event:a11y-tabs:init">a11y-tabs:init</a></li></ul><h3>Modules</h3><ul><li><a href="module-htz-a11y-tabs.html">htz-a11y-tabs</a></li><li><a href="module-htz-a11y-tabs_utils.html">htz-a11y-tabs/utils</a><ul class='methods'><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.destroyInstance">destroyInstance</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.gotoTab">gotoTab</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.initialize">initialize</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.makeFocusable">makeFocusable</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.nextTab">nextTab</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.prevTab">prevTab</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#~handleTabSwitch">handleTabSwitch</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+
+    <!--container.tmpl-->
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+    <section class="readme">
+        <article><h1>htz a11y tabs</h1><p>JavaScript scaffolding for accessible tab interfaces</p>
+<h3>Installation</h3><pre class="prettyprint source lang-bash"><code>jspm install github:haaretz/htz-a11y-tabs</code></pre><h3>Usage</h3><p>This module is built to enhance semantic markup into an accessible tab interface, 
+using ARIA and a little javascript.</p>
+<pre class="prettyprint source lang-js"><code>// Import
+import a11yTabs from 'htz-a11y-tabs';
+
+// Instanciate
+a11yTabs(tabInterface [,rtl , tablistSelector, tabpanelSelector, activeTab]);</code></pre><p>See <a href="https://haaretz.github.io/htz-a11y-tabs/">here</a> for the full JavaScript documentation.</p>
+<p>The tablist should be a <code>ul</code> element, with each <code>li</code> containing an anchor element
+pointing to the relevant tabpanel (which should, in most likelihood be a <code>section</code>
+or an <code>article</code> element):</p>
+<pre class="prettyprint source lang-html"><code>&lt;section id=&quot;tabInterface&quot;>
+  &lt;!-- tablist -->
+  &lt;ul>
+    &lt;li>&lt;a href=&quot;#section1&quot;>Section 1&lt;/a>&lt;/li>
+    &lt;li>&lt;a href=&quot;#section2&quot;>Section 2&lt;/a>&lt;/li>
+    &lt;li>&lt;a href=&quot;#section3&quot;>Section 3&lt;/a>&lt;/li>
+    &lt;li>&lt;a href=&quot;#section4&quot;>Section 4&lt;/a>&lt;/li>
+  &lt;/ul>
+
+  &lt;!-- tabpanels -->
+  &lt;article id=&quot;section1&quot;>
+    &lt;h2>section 1&lt;/h2>
+  &lt;/article>
+  &lt;article id=&quot;section2>
+    &lt;h2>section 2&lt;/h2>
+  &lt;/article>
+  &lt;article id=&quot;section13>
+    &lt;h2>section 3&lt;/h2>
+  &lt;/article>
+  &lt;article id=&quot;section4>
+    &lt;h2>section 4&lt;/h2>
+  &lt;/article>
+&lt;/section></code></pre><p>The above markup will start us off with a basic list of links to articles within our page, which 
+can still be accessible in the event of any failure in executing the script. Our tab interface can
+now be progressively enhanced using JavaScript and CSS.</p>
+<p>Once our tab interface it initialized, its markup will be transformed into:</p>
+<pre class="prettyprint source lang-html"><code>&lt;section id=&quot;tabInterface&quot;>
+  &lt;!-- tablist -->
+  &lt;ul role=&quot;tablist&quot;>
+    &lt;li role=&quot;presentation&quot;>
+      &lt;a href=&quot;#section1&quot; tabindex=&quot;0&quot; role=&quot;tab&quot; aria-controls=&quot;section1&quot; aria-selected=&quot;true&quot;>Section 1&lt;/a>
+    &lt;/li>
+    &lt;li role=&quot;presentation&quot;>
+      &lt;a href=&quot;#section2&quot; tabindex=&quot;-1&quot; role=&quot;tab&quot; aria-controls=&quot;section2&quot;>Section 2&lt;/a>
+    &lt;/li>
+    &lt;li role=&quot;presentation&quot;>
+      &lt;a href=&quot;#section3&quot; tabindex=&quot;-1&quot; role=&quot;tab&quot; aria-controls=&quot;section3&quot;>Section 3&lt;/a>
+    &lt;/li>
+    &lt;li role=&quot;presentation&quot;>
+      &lt;a href=&quot;#section4&quot; tabindex=&quot;-1&quot; role=&quot;tab&quot; aria-controls=&quot;section4&quot;>Section 4&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+
+  &lt;!-- tabpanels -->
+  &lt;article id=&quot;section1&quot; role=&quot;tabpanel&quot;>
+    &lt;h2 tabindex=&quot;0&quot;>section 1&lt;/h2>
+  &lt;/article>
+  &lt;article id=&quot;section2&quot; role=&quot;tabpanel&quot; aria-hidden=&quot;true&quot;>
+    &lt;h2>section 2&lt;/h2>
+  &lt;/article>
+  &lt;article id=&quot;section3&quot; role=&quot;tabpanel&quot; aria-hidden=&quot;true&quot;>
+    &lt;h2>section 3&lt;/h2>
+  &lt;/article>
+  &lt;article id=&quot;section4&quot; role=&quot;tabpanel&quot; aria-hidden=&quot;true&quot;>
+    &lt;h2>section 4&lt;/h2>
+  &lt;/article>
+&lt;/section></code></pre><p>Make sure that your css hides tabpanels that have the <code>aria-hidden</code> attribute 
+set to <code>true</code>, and that a tab with the <code>aria-selected</code> attribute set to <code>true</code> 
+are marked as the active tab. </p>
+<p>The script enables cycling between the selected tab and its content without having cycle 
+through all the other tabs. As per <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel">spec</a>, 
+moving through the tabs is done with <code>left</code> and <code>right</code> arrow keys, while moving between the 
+selected tab and the visible tab panel is done using the <code>tab</code> key.</p>
+<p>Pressing the <code>tab</code> key will focus the first element <em>inside</em> the tab panel 
+(which, for semantics sake, should probably be a heading), or the tab panel 
+itself when it does not contain any HTML elements.</p>
+<h3>Parameters</h3><ul>
+<li><strong>container</strong> (HTMLElement): The wrapper element around the tabs and tab panels.</li>
+<li><strong>rtl</strong> (Boolean): Determine if the tab interface should be right-to-left. <em>Default: false</em>.</li>
+<li><strong>tablistSelector</strong> (String): The tablist's selector. <em>Default: 'ul'</em>.</li>
+<li><strong>tabpanelSelector</strong> (String): The tabpanels' selector. <em>Default: 'section'</em>.</li>
+<li><strong>activeTab</strong> (Integer): The tab number to have initially activated. Zero based. <em>Default: 0</em>.</li>
+</ul>
+<h3>Events</h3><ul>
+<li><strong>'a11y-tabs:init'</strong> - Fired from <code>container</code> after a tab interface has been initialized</li>
+<li><strong>'a11y-tabs:destroy'</strong> - Fired from <code>container</code> after a tab interface has been destroyed</li>
+<li><strong>'a11y-tabs:before-select'</strong> - Fired from <code>container</code> before a tab selection is applied. 
+If the event handler executes <code>event.preventDefault()</code>, the selection will not be applied.</li>
+<li><strong>'a11y-tabs:after-select'</strong> - Fired from <code>container</code> after a tab selection is applied.</li>
+</ul>
+<p>See <a href="https://haaretz.github.io/htz-a11y-tabs/">the documentation</a> for details on 
+properties available in each event object.</p>
+<h3>Instance Methods</h3><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>isInitialized&nbsp;</td>
+<td>Returns true if the instance is initialized&nbsp;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>visibleTab&nbsp;</td>
+<td>Returns the number of the active tab. Zero based&nbsp;</td>
+<td>-</td>
+</tr>
+<tr>
+<td>init&nbsp;</td>
+<td>Initialize an instance&nbsp;</td>
+<td>Takes an optional tab number to be made the active tab</td>
+</tr>
+<tr>
+<td>destroy&nbsp;</td>
+<td>Destroy an instance&nbsp;</td>
+<td>Takes an optional boolean, indicating if accessibility attributes should be removed in addition to events. <em>Default: <code>false</code></em></td>
+</tr>
+<tr>
+<td>goto&nbsp;</td>
+<td>Go to a specific tab.</td>
+<td>Takes a tab number to go to, and an optional boolean, indicating if focus should be moved inside the tab panel, or remain where is</td>
+</tr>
+<tr>
+<td>next&nbsp;</td>
+<td>Go to the next tab</td>
+<td>Takes an optional boolean, indicating if focus should be moved inside the tab panel, or remain where is</td>
+</tr>
+<tr>
+<td>previous&nbsp;</td>
+<td>Go to the next tab</td>
+<td>Takes an optional boolean, indicating if focus should be moved inside the tab panel, or remain where is</td>
+</tr>
+</tbody>
+</table></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Wed Aug 10 2016 16:00:46 GMT+0300 (IDT) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

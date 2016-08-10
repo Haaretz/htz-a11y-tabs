@@ -1,0 +1,3024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>htz-a11y-tabs - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Events</h3><ul><li><a href="module-htz-a11y-tabs.html#~event:a11y-tabs:after-select">a11y-tabs:after-select</a></li><li><a href="module-htz-a11y-tabs.html#~event:a11y-tabs:before-select">a11y-tabs:before-select</a></li><li><a href="module-htz-a11y-tabs.html#~event:a11y-tabs:destroy">a11y-tabs:destroy</a></li><li><a href="module-htz-a11y-tabs.html#~event:a11y-tabs:init">a11y-tabs:init</a></li></ul><h3>Modules</h3><ul><li><a href="module-htz-a11y-tabs.html">htz-a11y-tabs</a></li><li><a href="module-htz-a11y-tabs_utils.html">htz-a11y-tabs/utils</a><ul class='methods'><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.destroyInstance">destroyInstance</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.gotoTab">gotoTab</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.initialize">initialize</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.makeFocusable">makeFocusable</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.nextTab">nextTab</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#.prevTab">prevTab</a></li><li data-type='method'><a href="module-htz-a11y-tabs_utils.html#~handleTabSwitch">handleTabSwitch</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">htz-a11y-tabs</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+
+<section>
+
+
+
+<header data-tmpl="container.tmpl">
+    
+      <h2>Module: htz-a11y-tabs</h2>
+        
+            
+        
+            
+        
+    
+
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>HTZ A11Y TABS</p>
+<p>JavaScript scaffolding for accessible tab interfaces</p></div>
+        
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line1">1</a>
+  </code>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-htz-a11y-tabs">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line1">1</a>
+  </code>
+</div>
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-license">License:</dt>
+    <dd class="tag-license"><ul class="dummy"><li>MIT</li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * HTZ A11Y TABS\n *\n * JavaScript scaffolding for accessible tab interfaces\n *\n * @module htz-a11y-tabs\n * @license MIT\n */","meta":{"range":[0,127],"filename":"index.js","lineno":1,"path":"/home/txh/code/htz-js-modules/htz-a11y-tabs/src","code":{},"shortpath":"index.js"},"description":"<p>HTZ A11Y TABS</p>\n<p>JavaScript scaffolding for accessible tab interfaces</p>","kind":"module","name":"htz-a11y-tabs","license":"MIT","longname":"module:htz-a11y-tabs","___id":"T000002R000002","___s":true,"attribs":"","id":"htz-a11y-tabs","ancestors":[]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line34">34</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="module:htz-a11y-tabs">
+      <a href="#params-(require("htz-a11y-tabs"))"><span class="type-signature"></span>(require("htz-a11y-tabs"))</a><span class="signature">(container, rtl, tablistSelector<span class="signature-attributes">opt</span>, tabpanelSelector<span class="signature-attributes">opt</span>, activeTab<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="module-htz-a11y-tabs.html#API">module:htz-a11y-tabs#API</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Initialize a tab interface.
+Depends on semantic markup, in which the tablist is a <code>ul</code> element, and each
+tab contains an clickable tag pointing to its respective tabpanel.</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-(require("htz-a11y-tabs"))">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-(require("htz-a11y-tabs"))" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>container</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The wrapper element around the tabs and tab panels</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>rtl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Determine if the tab interface should be right-to-left</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tablistSelector</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    'ul'
+                
+                </td>
+            
+
+            <td class="description last"><p>The tablist's selector.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tabpanelSelector</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    'section'
+                
+                </td>
+            
+
+            <td class="description last"><p>The tabpanels' selector.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>activeTab</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Integer</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+
+            <td class="description last"><p>The tab number to have initially activated. Zero based.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+<h5>Fires:</h5>
+<ul>
+    <li>module:htz-a11y-tabs~a11y-tabs:init - Fired from `container` after a
+   tab interface has been initializedevent:</li>
+
+    <li>module:htz-a11y-tabs~a11y-tabs:destroy - Fired from `container` after
+   a tab interface has been destroyedevent:</li>
+
+    <li>module:htz-a11y-tabs~a11y-tabs:before-select - Fired from `container`
+   before a tab selection is applied. If the event handler executes
+   `event.preventDefault()`, the selection will not be applied.event:</li>
+
+    <li>module:htz-a11y-tabs~a11y-tabs:after-select - Fired from `container`
+   after a tab selection is applied.event:</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="module-htz-a11y-tabs.html#API">module:htz-a11y-tabs#API</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Initialize a tab interface.\n * Depends on semantic markup, in which the tablist is a `ul` element, and each\n * tab contains an clickable tag pointing to its respective tabpanel.\n * @param {HTMLElement} container - The wrapper element around the tabs and tab panels\n * @param {Boolean} rtl - Determine if the tab interface should be right-to-left\n * @param {String} [tablistSelector='ul'] - The tablist's selector.\n * @param {String} [tabpanelSelector='section'] - The tabpanels' selector.\n * @param {Integer} [activeTab=0] - The tab number to have initially activated. Zero based.\n *\n * @fires module:htz-a11y-tabs~a11y-tabs:init - Fired from `container` after a\n *    tab interface has been initialized\n * @fires module:htz-a11y-tabs~a11y-tabs:destroy - Fired from `container` after\n *    a tab interface has been destroyed\n * @fires module:htz-a11y-tabs~a11y-tabs:before-select - Fired from `container`\n *    before a tab selection is applied. If the event handler executes\n *    `event.preventDefault()`, the selection will not be applied.\n * @fires module:htz-a11y-tabs~a11y-tabs:after-select - Fired from `container`\n *    after a tab selection is applied.\n *\n * @return {module:htz-a11y-tabs#API}\n */","meta":{"range":[1430,5903],"filename":"index.js","lineno":34,"path":"/home/txh/code/htz-js-modules/htz-a11y-tabs/src","code":{"id":"astnode100000013","name":"module.exports","type":"FunctionDeclaration","paramnames":["container","rtl","tablistSelector","tabpanelSelector","activeTab"]},"shortpath":"index.js"},"description":"<p>Initialize a tab interface.\nDepends on semantic markup, in which the tablist is a <code>ul</code> element, and each\ntab contains an clickable tag pointing to its respective tabpanel.</p>","params":[{"type":{"names":["HTMLElement"]},"description":"<p>The wrapper element around the tabs and tab panels</p>","name":"container"},{"type":{"names":["Boolean"]},"description":"<p>Determine if the tab interface should be right-to-left</p>","name":"rtl"},{"type":{"names":["String"]},"optional":true,"defaultvalue":"'ul'","description":"<p>The tablist's selector.</p>","name":"tablistSelector"},{"type":{"names":["String"]},"optional":true,"defaultvalue":"'section'","description":"<p>The tabpanels' selector.</p>","name":"tabpanelSelector"},{"type":{"names":["Integer"]},"optional":true,"defaultvalue":0,"description":"<p>The tab number to have initially activated. Zero based.</p>","name":"activeTab"}],"fires":["module:htz-a11y-tabs~a11y-tabs:init - Fired from `container` after a\n   tab interface has been initializedevent:","module:htz-a11y-tabs~a11y-tabs:destroy - Fired from `container` after\n   a tab interface has been destroyedevent:","module:htz-a11y-tabs~a11y-tabs:before-select - Fired from `container`\n   before a tab selection is applied. If the event handler executes\n   `event.preventDefault()`, the selection will not be applied.event:","module:htz-a11y-tabs~a11y-tabs:after-select - Fired from `container`\n   after a tab selection is applied.event:"],"returns":[{"type":{"names":["module:htz-a11y-tabs#API"]}}],"name":"(require(\"htz-a11y-tabs\"))","longname":"module:htz-a11y-tabs","kind":"function","___id":"T000002R000003","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"module:htz-a11y-tabs","signature":"<span class=\"signature\">(container, rtl, tablistSelector<span class=\"signature-attributes\">opt</span>, tabpanelSelector<span class=\"signature-attributes\">opt</span>, activeTab<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"module-htz-a11y-tabs.html#API\">module:htz-a11y-tabs#API</a>}</span>","ancestors":[]}
+</pre>
+-->
+</div>
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                <!--members.tmpl-->
+<div class="member-details">
+
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line176">176</a>
+  </code>
+</div>
+
+
+
+<h4 class="name" id="API">
+  API
+</h4>
+
+
+
+
+<div class="description">
+    <p>Instance API</p>
+</div>
+
+
+<div>
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line176">176</a>
+  </code>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>isInitialized</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Method</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Returns true if the instance is initialized</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>visibleTab</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Method</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Returns the number of the active tab. Zero based.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>init</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-htz-a11y-tabs.html#init">module:htz-a11y-tabs#init</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Initialize an instance.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>destroy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-htz-a11y-tabs.html#destroy">module:htz-a11y-tabs#destroy</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Destroy an instance.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>goto</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-htz-a11y-tabs.html#goto">module:htz-a11y-tabs#goto</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Go to a specific tab</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-htz-a11y-tabs.html#next">module:htz-a11y-tabs#next</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Go to the next tab</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>previous</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-htz-a11y-tabs.html#prev">module:htz-a11y-tabs#prev</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Go to the next tab</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+            
+                <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line111">111</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="destroy">
+      <a href="#params-destroy"><span class="type-signature"></span>destroy</a><span class="signature">(removeAttrs<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Destroy an instance. Removes event listeners and, optionally,
+accessibility attributes from the DOM.</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-destroy">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line111">111</a>
+  </code>
+</div>
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-destroy" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>removeAttrs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Determine if attributes should be remove</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n   * Destroy an instance. Removes event listeners and, optionally,\n   * accessibility attributes from the DOM.\n   *\n   * @callback module:htz-a11y-tabs#destroy\n   *\n   * @param {Boolean} [removeAttrs] - Determine if attributes should be remove\n   */","meta":{"range":[3302,3555],"filename":"index.js","lineno":111,"path":"/home/txh/code/htz-js-modules/htz-a11y-tabs/src","code":{},"shortpath":"index.js"},"description":"<p>Destroy an instance. Removes event listeners and, optionally,\naccessibility attributes from the DOM.</p>","kind":"typedef","name":"destroy","type":{"names":["function"]},"params":[{"type":{"names":["Boolean"]},"optional":true,"description":"<p>Determine if attributes should be remove</p>","name":"removeAttrs"}],"memberof":"module:htz-a11y-tabs","longname":"module:htz-a11y-tabs#destroy","scope":"instance","___id":"T000002R000025","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"destroy","signature":"<span class=\"signature\">(removeAttrs<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"></span>","ancestors":["<a href=\"module-htz-a11y-tabs.html\">htz-a11y-tabs</a>#"]}
+</pre>
+-->
+</div>
+
+            
+                <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line132">132</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="goto">
+      <a href="#params-goto"><span class="type-signature"></span>goto</a><span class="signature">(index, focus<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Go to a tab</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-goto">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line132">132</a>
+  </code>
+</div>
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-goto" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Integer</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The index of the tab to be activated</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>focus</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Determine if the newly activated tab should be focused.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n   * Go to a tab\n   *\n   * @callback module:htz-a11y-tabs#goto\n   *\n   * @param {Integer} index - The index of the tab to be activated\n   * @param {Boolean} [focus] - Determine if the newly activated tab should be focused.\n   */","meta":{"range":[3779,4011],"filename":"index.js","lineno":132,"path":"/home/txh/code/htz-js-modules/htz-a11y-tabs/src","code":{},"shortpath":"index.js"},"description":"<p>Go to a tab</p>","kind":"typedef","name":"goto","type":{"names":["function"]},"params":[{"type":{"names":["Integer"]},"description":"<p>The index of the tab to be activated</p>","name":"index"},{"type":{"names":["Boolean"]},"optional":true,"description":"<p>Determine if the newly activated tab should be focused.</p>","name":"focus"}],"memberof":"module:htz-a11y-tabs","longname":"module:htz-a11y-tabs#goto","scope":"instance","___id":"T000002R000028","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"goto","signature":"<span class=\"signature\">(index, focus<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"></span>","ancestors":["<a href=\"module-htz-a11y-tabs.html\">htz-a11y-tabs</a>#"]}
+</pre>
+-->
+</div>
+
+            
+                <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line90">90</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="init">
+      <a href="#params-init"><span class="type-signature"></span>init</a><span class="signature">(activate)</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Initialize an instance</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-init">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line90">90</a>
+  </code>
+</div>
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-init" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>activate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Integer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The tab number to activate. Zero based.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n   * Initialize an instance\n   * @callback module:htz-a11y-tabs#init\n   *\n   * @param {Integer} activate - The tab number to activate. Zero based.\n   */","meta":{"range":[2831,2987],"filename":"index.js","lineno":90,"path":"/home/txh/code/htz-js-modules/htz-a11y-tabs/src","code":{},"shortpath":"index.js"},"description":"<p>Initialize an instance</p>","kind":"typedef","name":"init","type":{"names":["function"]},"params":[{"type":{"names":["Integer"]},"description":"<p>The tab number to activate. Zero based.</p>","name":"activate"}],"memberof":"module:htz-a11y-tabs","longname":"module:htz-a11y-tabs#init","scope":"instance","___id":"T000002R000021","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"init","signature":"<span class=\"signature\">(activate)</span><span class=\"type-signature\"></span>","ancestors":["<a href=\"module-htz-a11y-tabs.html\">htz-a11y-tabs</a>#"]}
+</pre>
+-->
+</div>
+
+            
+                <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line147">147</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="next">
+      <a href="#params-next"><span class="type-signature"></span>next</a><span class="signature">(focus<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Go to the next tab</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-next">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line147">147</a>
+  </code>
+</div>
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-next" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>focus</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Determine if the newly activated tab should be focused.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n   * Go to the next tab\n   *\n   * @callback module:htz-a11y-tabs#next\n   *\n   * @param {Boolean} [focus] - Determine if the newly activated tab should be focused.\n   */","meta":{"range":[4259,4431],"filename":"index.js","lineno":147,"path":"/home/txh/code/htz-js-modules/htz-a11y-tabs/src","code":{},"shortpath":"index.js"},"description":"<p>Go to the next tab</p>","kind":"typedef","name":"next","type":{"names":["function"]},"params":[{"type":{"names":["Boolean"]},"optional":true,"description":"<p>Determine if the newly activated tab should be focused.</p>","name":"focus"}],"memberof":"module:htz-a11y-tabs","longname":"module:htz-a11y-tabs#next","scope":"instance","___id":"T000002R000033","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"next","signature":"<span class=\"signature\">(focus<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"></span>","ancestors":["<a href=\"module-htz-a11y-tabs.html\">htz-a11y-tabs</a>#"]}
+</pre>
+-->
+</div>
+
+            
+                <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line161">161</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="prev">
+      <a href="#params-prev"><span class="type-signature"></span>prev</a><span class="signature">(focus<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Go to the previous tab</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-prev">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="index.js.html">index.js</a>:<a href="index.js.html#line161">161</a>
+  </code>
+</div>
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-prev" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>focus</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Determine if the newly activated tab should be focused.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n   * Go to the previous tab\n   *\n   * @callback module:htz-a11y-tabs#prev\n   *\n   * @param {Boolean} [focus] - Determine if the newly activated tab should be focused.\n   */","meta":{"range":[4665,4841],"filename":"index.js","lineno":161,"path":"/home/txh/code/htz-js-modules/htz-a11y-tabs/src","code":{},"shortpath":"index.js"},"description":"<p>Go to the previous tab</p>","kind":"typedef","name":"prev","type":{"names":["function"]},"params":[{"type":{"names":["Boolean"]},"optional":true,"description":"<p>Determine if the newly activated tab should be focused.</p>","name":"focus"}],"memberof":"module:htz-a11y-tabs","longname":"module:htz-a11y-tabs#prev","scope":"instance","___id":"T000002R000038","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"prev","signature":"<span class=\"signature\">(focus<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"></span>","ancestors":["<a href=\"module-htz-a11y-tabs.html\">htz-a11y-tabs</a>#"]}
+</pre>
+-->
+</div>
+
+            
+    
+
+    
+        <h3 class="subsection-title">Events</h3>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="lib_utils.js.html">utils.js</a>:<a href="lib_utils.js.html#line235">235</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="~event:a11y-tabs:after-select">
+      <a href="#params-a11y-tabs:after-select">a11y-tabs:after-select</a>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Fired from <code>container</code> after a tab selection is applied.</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-a11y-tabs:after-select">
+
+  
+      <h5>Type:</h5>
+      <ul>
+          <li>
+              
+<span class="param-type">Object</span>
+
+
+          </li>
+      </ul>
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="lib_utils.js.html">utils.js</a>:<a href="lib_utils.js.html#line235">235</a>
+  </code>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>detail</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>prevTab</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The previously active tab</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>targetTab</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The tab that has been activated
+   by the selection.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>prevTabpanel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The previously active tabpanel</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>targetTabpanel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The tabpanel that will be activated
+   after the selection is applied.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n       * Fired from `container` after a tab selection is applied.\n       *\n       * @event module:htz-a11y-tabs~a11y-tabs:after-select\n       *\n       * @type {Object}\n       * @prop {Object} detail\n       * @prop {HTMLElement} detail.prevTab - The previously active tab\n       * @prop {HTMLElement} detail.targetTab - The tab that has been activated\n       *    by the selection.\n       * @prop {HTMLElement} detail.prevTabpanel - The previously active tabpanel\n       * @prop {HTMLElement} detail.targetTabpanel - The tabpanel that will be activated\n       *    after the selection is applied.\n       */","meta":{"range":[7870,8479],"filename":"utils.js","lineno":235,"path":"/home/txh/code/htz-js-modules/htz-a11y-tabs/src/lib","code":{},"shortpath":"lib/utils.js"},"description":"<p>Fired from <code>container</code> after a tab selection is applied.</p>","kind":"event","name":"a11y-tabs:after-select","type":{"names":["Object"]},"properties":[{"type":{"names":["Object"]},"name":"detail","subprops":[{"type":{"names":["HTMLElement"]},"description":"<p>The previously active tab</p>","name":"prevTab"},{"type":{"names":["HTMLElement"]},"description":"<p>The tab that has been activated\n   by the selection.</p>","name":"targetTab"},{"type":{"names":["HTMLElement"]},"description":"<p>The previously active tabpanel</p>","name":"prevTabpanel"},{"type":{"names":["HTMLElement"]},"description":"<p>The tabpanel that will be activated\n   after the selection is applied.</p>","name":"targetTabpanel"}]},null,null,null,null],"memberof":"module:htz-a11y-tabs","longname":"module:htz-a11y-tabs~event:a11y-tabs:after-select","scope":"inner","___id":"T000002R000093","___s":true,"attribs":"","id":"~event:a11y-tabs:after-select","ancestors":["<a href=\"module-htz-a11y-tabs.html\">htz-a11y-tabs</a>~"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="lib_utils.js.html">utils.js</a>:<a href="lib_utils.js.html#line211">211</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="~event:a11y-tabs:before-select">
+      <a href="#params-a11y-tabs:before-select">a11y-tabs:before-select</a>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Fired from <code>container</code> before a tab selection is applied. If the event
+handler executes <code>event.preventDefault()</code>, the selection will not be applied.</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-a11y-tabs:before-select">
+
+  
+      <h5>Type:</h5>
+      <ul>
+          <li>
+              
+<span class="param-type">Object</span>
+
+
+          </li>
+      </ul>
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="lib_utils.js.html">utils.js</a>:<a href="lib_utils.js.html#line211">211</a>
+  </code>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>detail</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>currentTab</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The currently active tab</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>targetTab</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The tab that will be activated
+   after the selection is applied.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>currentTabpanel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The currently active tabpanel</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>targetTabpanel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The tabpanel that will be
+   activated after the selection is applied.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Fired from `container` before a tab selection is applied. If the event\n     * handler executes `event.preventDefault()`, the selection will not be applied.\n     *\n     * @event module:htz-a11y-tabs~a11y-tabs:before-select\n     *\n     * @type {Object}\n     * @prop {Object} detail\n     * @prop {HTMLElement} detail.currentTab - The currently active tab\n     * @prop {HTMLElement} detail.targetTab - The tab that will be activated\n     *    after the selection is applied.\n     * @prop {HTMLElement} detail.currentTabpanel - The currently active tabpanel\n     * @prop {HTMLElement} detail.targetTabpanel - The tabpanel that will be\n     *    activated after the selection is applied.\n     */","meta":{"range":[6899,7599],"filename":"utils.js","lineno":211,"path":"/home/txh/code/htz-js-modules/htz-a11y-tabs/src/lib","code":{},"shortpath":"lib/utils.js"},"description":"<p>Fired from <code>container</code> before a tab selection is applied. If the event\nhandler executes <code>event.preventDefault()</code>, the selection will not be applied.</p>","kind":"event","name":"a11y-tabs:before-select","type":{"names":["Object"]},"properties":[{"type":{"names":["Object"]},"name":"detail","subprops":[{"type":{"names":["HTMLElement"]},"description":"<p>The currently active tab</p>","name":"currentTab"},{"type":{"names":["HTMLElement"]},"description":"<p>The tab that will be activated\n   after the selection is applied.</p>","name":"targetTab"},{"type":{"names":["HTMLElement"]},"description":"<p>The currently active tabpanel</p>","name":"currentTabpanel"},{"type":{"names":["HTMLElement"]},"description":"<p>The tabpanel that will be\n   activated after the selection is applied.</p>","name":"targetTabpanel"}]},null,null,null,null],"memberof":"module:htz-a11y-tabs","longname":"module:htz-a11y-tabs~event:a11y-tabs:before-select","scope":"inner","___id":"T000002R000087","___s":true,"attribs":"","id":"~event:a11y-tabs:before-select","ancestors":["<a href=\"module-htz-a11y-tabs.html\">htz-a11y-tabs</a>~"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="lib_utils.js.html">utils.js</a>:<a href="lib_utils.js.html#line142">142</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="~event:a11y-tabs:destroy">
+      <a href="#params-a11y-tabs:destroy">a11y-tabs:destroy</a>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Fired from <code>container</code> after a tab interface has been destroyed.</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-a11y-tabs:destroy">
+
+  
+      <h5>Type:</h5>
+      <ul>
+          <li>
+              
+<span class="param-type">Object</span>
+
+
+          </li>
+      </ul>
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="lib_utils.js.html">utils.js</a>:<a href="lib_utils.js.html#line142">142</a>
+  </code>
+</div>
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n   * Fired from `container` after a tab interface has been destroyed.\n   *\n   * @event module:htz-a11y-tabs~a11y-tabs:destroy\n   *\n   * @type {Object}\n   */","meta":{"range":[4358,4518],"filename":"utils.js","lineno":142,"path":"/home/txh/code/htz-js-modules/htz-a11y-tabs/src/lib","code":{},"shortpath":"lib/utils.js"},"description":"<p>Fired from <code>container</code> after a tab interface has been destroyed.</p>","kind":"event","name":"a11y-tabs:destroy","type":{"names":["Object"]},"memberof":"module:htz-a11y-tabs","longname":"module:htz-a11y-tabs~event:a11y-tabs:destroy","scope":"inner","___id":"T000002R000074","___s":true,"attribs":"","id":"~event:a11y-tabs:destroy","ancestors":["<a href=\"module-htz-a11y-tabs.html\">htz-a11y-tabs</a>~"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="lib_utils.js.html">utils.js</a>:<a href="lib_utils.js.html#line74">74</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="~event:a11y-tabs:init">
+      <a href="#params-a11y-tabs:init">a11y-tabs:init</a>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Fired from <code>container</code> when a tab interface is initialized</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-a11y-tabs:init">
+
+  
+      <h5>Type:</h5>
+      <ul>
+          <li>
+              
+<span class="param-type">Object</span>
+
+
+          </li>
+      </ul>
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="lib_utils.js.html">utils.js</a>:<a href="lib_utils.js.html#line74">74</a>
+  </code>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>detail</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>activeTab</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The active tab element.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>activeTabpanel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The active tabpanel element.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n   * Fired from `container` when a tab interface is initialized\n   * @event module:htz-a11y-tabs~a11y-tabs:init\n   *\n   * @type {Object}\n   *\n   * @prop {Object} detail\n   * @prop {HTMLElement} detail.activeTab - The active tab element.\n   * @prop {HTMLElement} detail.activeTabpanel - The active tabpanel element.\n   */","meta":{"range":[2321,2645],"filename":"utils.js","lineno":74,"path":"/home/txh/code/htz-js-modules/htz-a11y-tabs/src/lib","code":{},"shortpath":"lib/utils.js"},"description":"<p>Fired from <code>container</code> when a tab interface is initialized</p>","kind":"event","name":"a11y-tabs:init","type":{"names":["Object"]},"properties":[{"type":{"names":["Object"]},"name":"detail","subprops":[{"type":{"names":["HTMLElement"]},"description":"<p>The active tab element.</p>","name":"activeTab"},{"type":{"names":["HTMLElement"]},"description":"<p>The active tabpanel element.</p>","name":"activeTabpanel"}]},null,null],"memberof":"module:htz-a11y-tabs","longname":"module:htz-a11y-tabs~event:a11y-tabs:init","scope":"inner","___id":"T000002R000064","___s":true,"attribs":"","id":"~event:a11y-tabs:init","ancestors":["<a href=\"module-htz-a11y-tabs.html\">htz-a11y-tabs</a>~"]}
+</pre>
+-->
+</div>
+
+        
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Wed Aug 10 2016 16:00:46 GMT+0300 (IDT) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
