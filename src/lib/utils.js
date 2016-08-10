@@ -63,11 +63,11 @@ export function initialize(
     if (!tabpanel.id) tabpanel.id = controls;
 
     if (isActive) makeFocusable(tabpanel);
-
-    // Attach event listeners
-    clickable.addEventListener('keydown', keyHandler);
-    clickable.addEventListener('click', clickHandler);
   });
+
+  // Attach event listeners
+  tablist.addEventListener('keydown', keyHandler);
+  tablist.addEventListener('click', clickHandler);
 
   /**
    * Fired from `container` when a tab interface is initialized

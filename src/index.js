@@ -77,7 +77,7 @@ export default function htzA11yTabs(
   function clickHandler(evt) {
     evt.preventDefault();
 
-    const targetIndex = tabs.indexOf(evt.target);
+    const targetIndex = tabs.indexOf(evt.target.closest('a, button'));
     const active = state.activeTab;
 
     state.activeTab = gotoTab(targetIndex, container, tabs, tabpanels, active, true);
