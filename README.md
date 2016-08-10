@@ -36,16 +36,16 @@ or an `article` element):
   </ul>
 
   <!-- tabpanels -->
-  <article>
+  <article id="section1">
     <h2>section 1</h2>
   </article>
-  <article>
+  <article id="section2>
     <h2>section 2</h2>
   </article>
-  <article>
+  <article id="section13>
     <h2>section 3</h2>
   </article>
-  <article>
+  <article id="section4>
     <h2>section 4</h2>
   </article>
 </section>
@@ -119,3 +119,14 @@ itself when it does not contain any HTML elements.
 
 See [the documentation](https://haaretz.github.io/htz-a11y-tabs/) for details on 
 properties available in each event object.
+
+### Instance Methods
+| Name | Description | Params |
+| --- | --- | --- |
+| isInitialized&nbsp; | Returns true if the instance is initialized&nbsp; | - |
+| visibleTab&nbsp; | Returns the number of the active tab. Zero based&nbsp; | - |
+| init&nbsp; | Initialize an instance&nbsp;  | Takes an optional tab number to be made the active tab |
+| destroy&nbsp; | Destroy an instance&nbsp;  | Takes an optional boolean, indicating if accessibility attributes should be removed in addition to events. _Default: `false`_|
+| goto&nbsp; | Go to a specific tab.  | Takes a tab number to go to, and an optional boolean, indicating if focus should be moved inside the tab panel, or remain where is |
+| next&nbsp; | Go to the next tab | Takes an optional boolean, indicating if focus should be moved inside the tab panel, or remain where is |
+| previous&nbsp; | Go to the next tab | Takes an optional boolean, indicating if focus should be moved inside the tab panel, or remain where is  |

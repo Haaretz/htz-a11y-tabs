@@ -1,6 +1,6 @@
 {
   "name": "htz-a11y-tabs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript scaffolding for accessible tab interfaces",
   "repository": {
     "type": "git",
