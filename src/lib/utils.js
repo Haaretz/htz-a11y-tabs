@@ -258,12 +258,12 @@ export function makeFocusable(elem) {
  * @private
  */
 function handleTabSwitch(currentTab, targetTab, currentTabpanel, targetTabpanel, moveFocus) {
+  currentTab.setAttribute('tabindex', '-1');
+  currentTab.removeAttribute('aria-selected');
+
   targetTab.setAttribute('tabindex', '0');
   targetTab.setAttribute('aria-selected', 'true');
   targetTab.focus();
-
-  currentTab.setAttribute('tabindex', '-1');
-  currentTab.removeAttribute('aria-selected');
 
   currentTabpanel.setAttribute('aria-hidden', 'true');
   targetTabpanel.removeAttribute('aria-hidden');
