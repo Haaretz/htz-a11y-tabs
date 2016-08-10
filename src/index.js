@@ -91,7 +91,7 @@ export default function htzA11yTabs(
    * Initialize an instance
    * @callback module:htz-a11y-tabs#init
    *
-   * @param {Integer} activate - The tab number to activate. Zero based.
+   * @param {Integer} [activate] - The tab number to activate. Zero based.
    */
   function init(activate = activeTab) {
     if (state.isInitialized) destroy();
