@@ -38,7 +38,7 @@ SystemJS.config({
     "github:*/*.json"
   ],
   map: {
-    "htz-dispatch-event": "github:haaretz/htz-dispatch-event@1.0.1",
+    "htz-dispatch-event": "github:haaretz/htz-dispatch-event@1.0.3",
     "buffer": "github:jspm/nodelibs-buffer@0.2.0-alpha",
     "fs": "github:jspm/nodelibs-fs@0.2.0-alpha",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha"

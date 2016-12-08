@@ -49,7 +49,7 @@
       "lib": "src"
     },
     "dependencies": {
-      "htz-dispatch-event": "github:haaretz/htz-dispatch-event@^1.0.1"
+      "htz-dispatch-event": "github:haaretz/htz-dispatch-event@^1.0.3"
     },
     "devDependencies": {
       "plugin-babel": "npm:systemjs-plugin-babel@^0.0.13"
