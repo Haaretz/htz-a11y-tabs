@@ -39,13 +39,13 @@ or an `article` element):
   <article id="section1">
     <h2>section 1</h2>
   </article>
-  <article id="section2>
+  <article id="section2">
     <h2>section 2</h2>
   </article>
-  <article id="section13>
+  <article id="section13">
     <h2>section 3</h2>
   </article>
-  <article id="section4>
+  <article id="section4">
     <h2>section 4</h2>
   </article>
 </section>
